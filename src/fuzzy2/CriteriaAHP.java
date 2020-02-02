@@ -8,49 +8,6 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Taiwo Amoo
- */
-
-/*
-A file that contains a table of values in cells like this in excel spreadsheet should be read:
-
-     C1                     C2                     .........C33
-C1    1                  0.4,0.6,0.4              
-C2  0.25,1.66,0.25           1         
-C3  0.25,0.6,0.80        0.2,0.4,0.6      
-************************************************************************************8
-Another second table/matrix like this:
-       C1                          C2                    .........C33
-C1   1                             0.4,0.6,0.4               
-C2  0.25,0.45,0.25                  1      
-C3  0.3,0.30,0.80                  0.2,0.4,0.6      
-Make room for more tables in the code if there is need to increase the no of tables
-
-ARITHMETIC OPERATIONS THAT SHOULD BE DONE
-Then an addition operation and then average to collapse the two matrices/table into one:
-       It is all divided by 2 to get average because there are 2 tables e.g C2 +C2 from the 1st and 2nd table
-    C1                                                      C2                              ....C33              .........C33
-C1 (1+1)/2                                            (0.4+0.4/2),(0.6+0.6)/2),(0.4+0.4)/2)              
-C2 (0.25+0.25)/2,(1.66+0.45)/2), (0.25+0.25)/2)       (1+1)/2       
-C3 (0.25+0.30)/2),(0.60+0.30)/2),(0.80+0.80)/2)       (0.2+0.2)/2),(0.4+0.4)/2),(0.6+0.6)/2)       
-
-A new table with 3 values each for each criterion that have being averaged is now formed:
-   C1                     C2                     .........C33
-C1  1                    0.4,0.6,0.4              
-C2  0.25,1.05,0.25       1        
-C3  0.275,0.45,0.8       0.2,0.4,0.6 
-
-then defuzzification is performed for each 3 values in the matrix using:
-(((m-k) + (l-k)) / 3.0) + k;                                   where e.g.for row C1 with column C1 
-  **Check defuzzification class for codes                      k=0.1; l=0.1; m=0.3
-
-Then a ready to use matrix is now achieved which is passed into the initialise_matrix().
- Then Create interface to print out weights
- * square d matrix 
-*/
-
 
 
 public class CriteriaAHP {
