@@ -9,10 +9,8 @@ import fuzzy2.Type2CompensatoryAnd;
 import fuzzy2.Type2Deffuzification;
 import fuzzy2.YagersMinMax;
 import javax.swing.DefaultListModel;
-/**
- *
- * @author bamo
- */
+
+ 
 public class CompensatoryAndForm extends javax.swing.JFrame {
 
     /**
