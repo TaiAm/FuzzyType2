@@ -6,20 +6,6 @@
 package fuzzy2;
 
 
-/**
- *
- * @author Taiwo Amoo
- */
-
-/*
-In line 51, Create an object of the YagersMinMax class and initialise the calculateYagersWeightedDecisionmatrix()
-as a variable so i dont have to assign values to yagersWeightedDecisionMatrix [] statically in this class since
-it has been calculated in YagersMinMax class
-
-In line 108, Do as above
-
-Create user interface to generate all results in the println() for all functions; 
-*/
 public class CompensatoryAnd {
    
     double yagersWeightedDecisionMatrix[][];
